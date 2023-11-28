@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+   
+    <title>Segunda PreEntrega</title>
+   
+
+</head>
+<body class="gradient">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary gradient">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+    <main>
+        <div class="text-center">
+            ¡Bienvenido al simulador de prestamo!
+        </div>
+
+        <form id="datosUser" class="row g-3 justify-content-center" onsubmit="return validarUser()">
+            <div class="col-md-7">
+              <label for="inputNombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputNombre">
+            </div>
+            <div class="col-md-7">
+              <label for="inputApellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="inputApellido">
+            </div>
+            <div class="col-7">
+              <label for="inputEdad" class="form-label">Edad</label>
+              <input type="text" class="form-control" id="inputEdad">
+            </div>
+            
+            <div class="col-7 text-center">
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
+          </form>
+
+<div id="datosPrestamo" class="oculto">
+          <form  class="row g-3 justify-content-center" onsubmit="return validarPrestamo()">
+            <div class="col-md-9 ">
+              <label for="inputMonto" class="form-label">Ingrese Monto del prestamo</label>
+              <input type="text" class="form-control" id="inputMonto">
+            </div>
+            <div class="col-md-9">
+              <label for="inputInteres" class="form-label">Ingrese la tasa de interes anual</label>
+              <input type="text" class="form-control" id="inputInteres">
+            </div>
+            <div class="col-9">
+              <label for="inputPlazo" class="form-label">Colocar el plazo del prestamo en meses</label>
+              <input type="text" class="form-control" id="inputPlazo">
+            </div>
+            
+            <div class="col-8">
+              <button type="submit" class="btn btn-primary">Simular</button>
+            </div>
+          </form>
+        </div>
+
+
+    </main>
+
+
+
+    <footer class="py-3 my-4" >
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Leonardo Andion CH</p><br>
+        <p class="text-center text-body-secondary">
+          <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://facebook.com/leonardo.r.andion/">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+            Facebook
+          </a>
+          <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.instagram.com/leonardoandion/">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+            Instagram
+          </a>
+         
+          <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.linkedin.com/in/leonardo-andion-59a3a814a/">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+            linkedin
+          </a>
+        </p>
+      </footer>
+    <script src="simulador.js"></script>
+</body>
+</html>
