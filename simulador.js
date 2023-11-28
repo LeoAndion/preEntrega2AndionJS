@@ -52,30 +52,44 @@ function generarIdUnico() {
 
 
 
-    const msjUser= [];
+const msjUsuarios = [];
     class MsjUser {
-        constructor(nombre, apellido, correo, mensaje) {
-            this.nombre = nombre.toLowerCase();
-            this.apellido = apellido.toLowerCase();
-            this.correo = correo; 
-            this.mensaje = mensaje;
 
-        }
-    };
+constructor(nombre, apellido, correo, mensaje) {
 
-  function obtenerDatos() {
-    const nombres = document.getElementById("nombres").value;
-    const apellidos = document.getElementById("apellidos").value;
-    const correo = document.getElementById("correo").value;
-    const mensaje = document.getElementById("mensaje").value;
+        this.nombre = nombre.toLowerCase();
 
-    const nuevoMensaje = new msjUser(nombres, apellidos, correo, mensaje);
-    msjUsuarios.push(nuevoMensaje);
+this.apellido = apellido.toLowerCase();
 
-    alert("Datos ingresados:\nNombre: " + nombres + "\nApellido: " + apellidos + "\nMensaje: " + mensaje);
-    return false; 
-    
+this.correo = correo; 
+
+        this.mensaje = mensaje;
+
     }
+
+}
+
+function obtenerDatos() {
+
+const nombres = document.getElementById("nombres").value;
+
+const apellidos = document.getElementById("apellidos").value;
+
+   const correo = document.getElementById("correo").value;
+
+const mensaje = document.getElementById("mensaje").value; 
+
+const nuevoMensaje = new MsjUser(nombres, apellidos, correo, mensaje); 
+
+msjUsuarios.push(nuevoMensaje);
+
+alert("Datos ingresados:\nNombre: " + nombres + "\nApellido: " + apellidos + "\nMensaje: " + mensaje);
+
+return false; 
+
+}
+
+
 
     
     
