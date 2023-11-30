@@ -8,7 +8,7 @@ function validarUser() {
     var edad = parseFloat(document.getElementById("inputEdad").value);
 
     if (edad < 18) {
-        alert("Por favor ingrese una edad válida!");
+        alert("Por favor ingrese una edad valida!");
         return false;
     } else if (nombre === "" || apellido === "") {
         alert("Ingrese un dato en el nombre o apellido");
@@ -53,6 +53,7 @@ function generarIdUnico() {
 
 
 const msjUsuarios = [];
+
     class MsjUser {
 
 constructor(nombre, apellido, correo, mensaje) {
@@ -68,6 +69,7 @@ this.correo = correo;
     }
 
 }
+
 
 function obtenerDatos() {
 
@@ -88,6 +90,23 @@ alert("Datos ingresados:\nNombre: " + nombres + "\nApellido: " + apellidos + "\n
 return false; 
 
 }
+
+
+const objetoPrueba =[
+    "Aqui no tenemos datos", "Aqui tampoco","Mucho menos","Capaz en la proxima entrega"
+]
+function probandoUnFor() {
+    const mostrarAlUser = document.getElementById("mostrarDatosPruebaFor");
+
+        let conteiner = "<p><strong>Datos de prueba:</strong></p>";
+        for (let i = 0; i < objetoPrueba.length; i++) {
+            conteiner += `<p>${objetoPrueba[i]}</p>`;
+        }
+
+        mostrarAlUser.innerHTML = conteiner;
+    }
+    
+
 
 
 
