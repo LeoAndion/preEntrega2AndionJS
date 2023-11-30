@@ -38,6 +38,7 @@
         <div class="text-center">
             ¡Bienvenido al simulador de prestamo!
         </div>
+        <br>
 
         <form id="datosUser" class="row g-3 justify-content-center" onsubmit="return validarUser()">
             <div class="col-md-7">
@@ -62,6 +63,8 @@
 <div id="mostrarDatosPruebaFor" class="text-center "></div>
 
 <div id="datosPrestamo" class="oculto">
+  <br>
+  
           <form  class="row g-3 justify-content-center" onsubmit="return validarPrestamo()">
             <div class="col-md-9 ">
               <label for="inputMonto" class="form-label">Ingrese Monto del prestamo </label>
@@ -76,7 +79,7 @@
               <input type="text" class="form-control" id="inputPlazo">
             </div>
             
-            <div class="col-8">
+            <div class="col-8 text-center">
               <button type="submit" class="btn btn-primary">Simular</button>
             </div>
           </form>
